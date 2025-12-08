@@ -1,62 +1,207 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Pinnacle Tax Advisory — Home</title>
-  <link rel="stylesheet" href="assets/styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Pinnacle Tax Advisory — Professional tax & accounting solutions</title>
+  <meta name="description" content="Pinnacle Tax Advisory: ITR filing, GST services, business registration and tax advisory for individuals and small businesses.">
+  <link rel="icon" href="/favicon.ico">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Pinnacle Tax Advisory">
+  <meta property="og:description" content="Professional tax & accounting solutions — ITR, GST, advisory">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pinnacletax.in/">
+
+  <style>
+    :root{
+      --brand:#183a86; /* deep blue */
+      --muted:#f4f5f8;
+      --card:#fff;
+      --accent:#0b72e8;
+      --max-width:1100px;
+      --radius:10px;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      color:#182026;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--muted);line-height:1.5}
+    header{background:var(--brand);color:#fff;padding:14px 20px}
+    .container{max-width:var(--max-width);margin:0 auto;padding:20px}
+    nav{display:flex;align-items:center;justify-content:space-between}
+    .logo{font-weight:700}
+    .nav-links a{color:#fff;text-decoration:none;margin-left:18px;font-weight:600}
+    .hero{padding:60px 20px;text-align:center}
+    .hero h1{font-size:34px;margin:0 0 10px}
+    .hero p{max-width:800px;margin:0 auto 20px;color:#515B6B}
+    .btn{background:var(--brand);color:#fff;padding:12px 20px;border-radius:8px;text-decoration:none;display:inline-block}
+
+    /* cards */
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px}
+    .card{background:var(--card);padding:22px;border-radius:var(--radius);box-shadow:0 6px 18px rgba(13,20,40,0.06)}
+    .card h3{margin:0 0 10px}
+
+    /* pricing */
+    .pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+    .price{background:#fff;padding:18px;border-radius:10px;text-align:center}
+    .price h4{margin:8px 0}
+    .muted{color:#6b7280}
+
+    /* testimonial */
+    .testimonials{margin-top:30px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+
+    /* about + contact */
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:30px}
+    .map{border-radius:10px;overflow:hidden}
+
+    footer{background:var(--brand);color:#fff;padding:22px;margin-top:40px;text-align:center}
+
+    /* WhatsApp fixed */
+    .whatsapp{position:fixed;right:18px;bottom:22px;background:#25D366;color:#fff;padding:14px;border-radius:50px;box-shadow:0 6px 18px rgba(0,0,0,0.15);display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:700}
+
+    /* Responsive */
+    @media (max-width:900px){
+      .cards,.pricing,.testimonials{grid-template-columns:1fr}
+      .two-col{grid-template-columns:1fr}
+      .hero h1{font-size:26px}
+      .nav-links{display:none}
+    }
+
+    /* small helpers */
+    .muted-small{color:#6b7280;font-size:14px}
+  </style>
+
+  <!-- Structured Data: LocalBusiness -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"LocalBusiness","name":"Pinnacle Tax Advisory","image":"https://pinnacletax.in/logo.png","@id":"https://pinnacletax.in/","url":"https://pinnacletax.in/","telephone":"+91-XXXXXXXXXX","address":{"@type":"PostalAddress","streetAddress":"Your Office Address","addressLocality":"Ahmedabad","addressRegion":"Gujarat","postalCode":"000000","addressCountry":"IN"},"openingHours":"Mo-Fr 09:30-18:30","priceRange":"₹₹"}
+  </script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html">Pinnacle Tax Advisory</a>
-      <nav class="main-nav">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="services.html" class="nav-link">Services</a>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="contact.html" class="nav-link">Contact</a>
-      </nav>
-    </div>
-  </header>
 
-  <main class="container">
-    <section class="hero">
-      <h1>Professional tax & accounting solutions</h1>
-      <p class="lead">We help businesses and individuals with tax filing, GST, returns, and compliance — clear, reliable, and up-to-date.</p>
-      <p><a class="btn" href="contact.html">Get a Consultation</a></p>
-    </section>
+<header>
+  <div class="container">
+    <nav>
+      <div class="logo">Pinnacle Tax Advisory</div>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
 
-    <section class="features">
-      <article>
+<main id="home">
+  <section class="hero container">
+    <h1>Professional tax & accounting solutions</h1>
+    <p>We help businesses and individuals with tax filing, GST, returns, and compliance — clear, reliable, and up-to-date. Fast turnaround and responsive support.</p>
+    <a class="btn" href="#contact">Get a Consultation</a>
+
+    <div class="cards">
+      <div class="card">
         <h3>Tax Filing</h3>
-        <p>Accurate income tax filing for individuals and businesses with timely reminders and checks.</p>
-      </article>
-      <article>
+        <p class="muted-small">Accurate income tax filing for individuals and businesses with timely reminders and checks.</p>
+      </div>
+      <div class="card">
         <h3>GST Services</h3>
-        <p>GST registration, monthly/quarterly returns, and reconciliation by experienced accountants.</p>
-      </article>
-      <article>
+        <p class="muted-small">GST registration, monthly/quarterly returns, and reconciliation by experienced accountants.</p>
+      </div>
+      <div class="card">
         <h3>Advisory</h3>
-        <p>Business structuring, tax planning and financial advisory tailored to your goals.</p>
-      </article>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> Pinnacle Tax Advisory · <a href="contact.html">Contact</a></p>
+        <p class="muted-small">Business structuring, tax planning and financial advisory tailored to your goals.</p>
+      </div>
     </div>
-  </footer>
 
-  <script>
-    // Set current year and mark active nav
-    document.getElementById('year').textContent = new Date().getFullYear();
-    (function(){
-      const links = document.querySelectorAll('.main-nav .nav-link');
-      links.forEach(a => {
-        if (location.pathname.endsWith(a.getAttribute('href'))) a.classList.add('active');
-      });
-    })();
-  </script>
+    <div class="pricing">
+      <div class="price">
+        <h4>ITR Filing</h4>
+        <div class="muted">Individual from ₹499</div>
+      </div>
+      <div class="price">
+        <h4>GST Registration</h4>
+        <div class="muted">From ₹1499</div>
+      </div>
+      <div class="price">
+        <h4>Monthly GST</h4>
+        <div class="muted">From ₹799 / month</div>
+      </div>
+    </div>
+
+    <h2 style="margin-top:38px">Trusted by Clients</h2>
+    <div class="testimonials">
+      <div class="card">“Quick and professional — filed my ITR in 2 days.” <div class="muted-small">— A. Patel</div></div>
+      <div class="card">“Great GST support for our shop.” <div class="muted-small">— S. Desai</div></div>
+      <div class="card">“Clear pricing and helpful team.” <div class="muted-small">— R. Shah</div></div>
+    </div>
+  </section>
+
+  <section id="about" class="container">
+    <div class="two-col">
+      <div>
+        <h3>About Pinnacle Tax Advisory</h3>
+        <p>We are a small team of Chartered Accountants and tax professionals serving individuals and SMEs across Gujarat. Our focus is on fast filing, honest pricing and proactive compliance reminders.</p>
+        <ul>
+          <li>CA qualified professionals</li>
+          <li>Experienced in GST, ITR and business advisory</li>
+          <li>Quick turnarounds and secure data handling</li>
+        </ul>
+      </div>
+      <div class="map">
+        <!-- Replace src with your Google Maps embed link -->
+        <iframe width="100%" height="260" frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d0" allowfullscreen aria-hidden="false" tabindex="0"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="container" style="margin-top:40px">
+    <h3>Contact Us</h3>
+    <p class="muted-small">Use the form below or WhatsApp us for a quick reply.</p>
+
+    <!-- Netlify form -->
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="contact">
+      <p style="display:none">
+        <label>Don’t fill: <input name="bot-field"></label>
+      </p>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:800px">
+        <input name="name" placeholder="Full name" required style="padding:10px;border-radius:8px;border:1px solid #e6e9ef">
+        <input name="email" type="email" placeholder="Email" style="padding:10px;border-radius:8px;border:1px solid #e6e9ef">
+        <input name="phone" placeholder="Phone / WhatsApp" style="padding:10px;border-radius:8px;border:1px solid #e6e9ef">
+        <select name="service" style="padding:10px;border-radius:8px;border:1px solid #e6e9ef">
+          <option value="ITR">ITR Filing</option>
+          <option value="GST">GST Services</option>
+          <option value="Advisory">Advisory</option>
+        </select>
+        <textarea name="message" placeholder="Short message" style="grid-column:1/3;padding:10px;border-radius:8px;border:1px solid #e6e9ef"></textarea>
+        <button type="submit" class="btn" style="width:160px">Send Enquiry</button>
+      </div>
+    </form>
+
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">© 2025 Pinnacle Tax Advisory · <a href="#contact" style="color:#fff;text-decoration:underline">Contact</a></div>
+</footer>
+
+<!-- WhatsApp quick link: replace phone number with your WhatsApp number (country code +918824626989) -->
+<a class="whatsapp" href="https://wa.me/918824626989" target="_blank" rel="noopener noreferrer">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.52 3.48A11.95 11.95 0 0012 0C5.372 0 .038 5.334.03 11.96c0 2.116.55 4.184 1.6 6.004L0 24l6.184-1.6A11.94 11.94 0 0012 24c6.626 0 12-5.372 12-12 0-3.196-1.24-6.196-3.48-8.52z" fill="#fff" opacity="0.08"/><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.149-.672.149s-.77.967-.945 1.17c-.174.199-.347.223-.644.075-.297-.149-1.255-.462-2.39-1.475-.883-.786-1.48-1.75-1.653-2.047-.174-.297-.019-.458.13-.606.134-.133.297-.347.446-.52.149-.174.199-.298.298-.497.099-.199 0-.372-.05-.521-.05-.149-.672-1.612-.92-2.203-.242-.58-.487-.501-.672-.51l-.572-.01c-.199 0-.521.075-.793.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487 3 .675 3.6.599 4.24.551.134-.099 1.758-.718 2.007-1.413.248-.695.248-1.29.174-1.413-.074-.123-.273-.198-.57-.347z" fill="#fff"/></svg>
+  WhatsApp
+</a>
+
+<script>
+  // Small JS to smooth-scroll anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(a=>{
+    a.addEventListener('click',function(e){
+      e.preventDefault();
+      const t=document.querySelector(this.getAttribute('href'));
+      if(t) t.scrollIntoView({behavior:'smooth',block:'start'});
+    });
+  });
+</script>
 </body>
 </html>
