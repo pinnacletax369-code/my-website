@@ -1,137 +1,148 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Pinnacle Tax Advisory | Trusted CA – ITR & GST</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="ITR filing, GST registration & returns, business advisory by trusted CA in Jalore.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pinnacle Tax Advisory | Trusted CA in Jalore</title>
 
-  <link rel="icon" href="/assets/favicon.png">
+<meta name="description" content="ITR Filing, GST Registration & Returns, Business Advisory in Jalore. Trusted CA services with quick response.">
 
-  <style>
-    :root{
-      --primary:#0b67d1;
-      --dark:#0f172a;
-      --muted:#6b7280;
-      --bg:#f6f9fc;
-      --card:#ffffff;
-      --radius:14px;
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family:system-ui,-apple-system,Segoe UI,Roboto;
-      background:var(--bg);
-      color:var(--dark);
-      line-height:1.6;
-    }
-    a{text-decoration:none;color:inherit}
-    .container{max-width:1100px;margin:auto;padding:24px}
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    /* Header */
-    header{
-      background:#fff;
-      border-bottom:1px solid #e5e7eb;
-      position:sticky;
-      top:0;
-      z-index:50;
-    }
-    .nav{
-      display:flex;
-      justify-content encourage-content:space-between;
-      align-items:center;
-      gap:16px;
-    }
-    .brand{
-      display:flex;
-      align-items:center;
-      gap:12px;
-      font-weight:700;
-    }
-    nav a{
-      margin-left:16px;
-      font-weight:600;
-      color:#1f2937;
-    }
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Inter,system-ui;
+  background:#f5f8fc;
+  color:#0f172a;
+}
+a{text-decoration:none;color:inherit}
+.container{max-width:1150px;margin:auto;padding:24px}
 
-    /* Hero */
-    .hero{
-      display:grid;
-      grid-template-columns:1fr 420px;
-      gap:36px;
-      align-items:center;
-      padding:40px 0;
-    }
-    h1{font-size:36px;line-height:1.1}
-    .cta{
-      display:flex;
-      gap:12px;
-      margin-top:20px;
-    }
-    .btn{
-      padding:12px 18px;
-      border-radius:10px;
-      font-weight:700;
-      display:inline-block;
-    }
-    .btn-primary{
-      background:var(--primary);
-      color:#fff;
-    }
-    .btn-outline{
-      border:2px solid var(--primary);
-      color:var(--primary);
-    }
+/* HEADER */
+header{
+  background:#fff;
+  position:sticky;
+  top:0;
+  z-index:50;
+  box-shadow:0 2px 12px rgba(0,0,0,.04)
+}
+.nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center
+}
+.logo{
+  display:flex;
+  gap:12px;
+  align-items:center
+}
+.logo img{height:44px}
+.nav a{margin-left:18px;font-weight:600;font-size:14px}
 
-    /* Card */
-    .card{
-      background:var(--card);
-      padding:20px;
-      border-radius:var(--radius);
-      box-shadow:0 10px 30px rgba(0,0,0,.06);
-    }
+/* HERO */
+.hero{
+  display:grid;
+  grid-template-columns:1.2fr 0.8fr;
+  gap:32px;
+  margin-top:30px
+}
+.hero h1{font-size:34px;margin-bottom:12px}
+.hero p{color:#475569}
+.btn{
+  background:#0b5ed7;
+  color:#fff;
+  padding:12px 18px;
+  border-radius:10px;
+  font-weight:600;
+  display:inline-block
+}
 
-    /* Form */
-    input,select,textarea{
-      width:100%;
-      padding:11px;
-      border-radius:8px;
-      border:1px solid #e5e7eb;
-      margin-bottom:10px;
-      font-size:14px;
-    }
-    textarea{min-height:90px}
+/* CARD */
+.card{
+  background:#fff;
+  border-radius:14px;
+  padding:22px;
+  box-shadow:0 15px 40px rgba(0,0,0,.06)
+}
 
-    /* Sections */
-    .services{
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:16px;
-      margin-top:30px;
-    }
+/* FORM */
+input,select,textarea{
+  width:100%;
+  padding:12px;
+  margin-bottom:10px;
+  border-radius:8px;
+  border:1px solid #dbe3ec;
+  font-size:14px
+}
+button{
+  width:100%;
+  padding:12px;
+  border:none;
+  border-radius:10px;
+  background:#0b5ed7;
+  color:#fff;
+  font-weight:700;
+  cursor:pointer
+}
 
-    footer{
-      margin-top:40px;
-      background:#0b67d1;
-      color:#fff;
-      border-radius:18px 18px 0 0;
-    }
+/* SERVICES */
+.services{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:40px
+}
+.service{
+  background:#fff;
+  padding:20px;
+  border-radius:14px;
+  box-shadow:0 10px 30px rgba(0,0,0,.05)
+}
 
-    @media(max-width:900px){
-      .hero{grid-template-columns:1fr}
-      .services{grid-template-columns:1fr}
-      nav{display:none}
-    }
-  </style>
+/* CONTACT */
+.contact{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:22px;
+  margin-top:40px
+}
+
+/* FOOTER */
+footer{
+  margin-top:50px;
+  background:#0b5ed7;
+  color:#fff;
+  padding:30px
+}
+
+/* WHATSAPP */
+.whatsapp{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  background:#25D366;
+  color:#fff;
+  padding:12px 18px;
+  border-radius:999px;
+  font-weight:700;
+  z-index:99
+}
+
+@media(max-width:900px){
+  .hero,.services,.contact{grid-template-columns:1fr}
+}
+</style>
 </head>
 
 <body>
 
 <header>
   <div class="container nav">
-    <div class="brand">
-      <img src="/assets/logo.png" height="42" alt="Pinnacle Tax">
-      Pinnacle Tax Advisory
+    <div class="logo">
+      <img src="/assets/logo.png">
+      <strong>Pinnacle Tax Advisory</strong>
     </div>
     <nav>
       <a href="#services">Services</a>
@@ -142,98 +153,110 @@
 
 <main class="container">
 
-  <!-- HERO -->
-  <section class="hero">
-    <div>
-      <h1>Professional tax & accounting help — fast & accurate</h1>
-      <p class="muted">
-        ITR filing, GST registration & returns, business advisory by a trusted CA in Jalore.
-      </p>
+<section class="hero">
+  <div>
+    <h1>Professional Tax & Accounting Help</h1>
+    <p>ITR Filing, GST Registration & Returns, Business Advisory with complete confidentiality.</p>
+    <a href="#contact" class="btn">Get Free Consultation</a>
+  </div>
 
-      <div class="cta">
-        <a href="#contact" class="btn btn-primary">Get Free Consultation</a>
-        <a href="#services" class="btn btn-outline">Our Services</a>
-      </div>
-    </div>
+  <!-- NETLIFY FORM -->
+  <div class="card">
+    <h3>Quick Consultation</h3>
 
-    <!-- FORM -->
-    <div class="card">
-      <h3>Quick Consultation</h3>
-      <p class="muted">Free 10-minute call with our CA</p>
+    <form name="quick-consult"
+          method="POST"
+          data-netlify="true"
+          action="/thank-you.html">
 
-      <!-- FORMSPREE (GitHub Pages SAFE) -->
-      <form
-        action="https://formspree.io/f/xjknaqjn"
-        method="POST"
-      >
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="tel" name="phone" placeholder="Mobile Number" required>
+      <input type="hidden" name="form-name" value="quick-consult">
 
-        <select name="service" required>
-          <option value="">Select Service</option>
-          <option>ITR Filing</option>
-          <option>GST Registration</option>
-          <option>GST Return</option>
-          <option>Company Registration</option>
-        </select>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="tel" name="mobile" placeholder="Mobile Number" required>
 
-        <textarea name="message" placeholder="Your Message"></textarea>
+      <select name="service" required>
+        <option value="">Select Service</option>
+        <option>ITR Filing</option>
+        <option>GST Registration</option>
+        <option>GST Returns</option>
+        <option>Business Advisory</option>
+      </select>
 
-        <!-- Redirect -->
-        <input type="hidden" name="_next" value="https://pinnacletax.in/thank-you.html">
+      <textarea name="message" placeholder="Your Message"></textarea>
 
-        <button type="submit" class="btn btn-primary" style="width:100%">
-          Get Free Consultation
-        </button>
-      </form>
-    </div>
-  </section>
+      <button type="submit">Get Free Consultation</button>
+    </form>
+  </div>
+</section>
 
-  <!-- SERVICES -->
-  <section id="services">
-    <h2>Our Services</h2>
-    <div class="services">
-      <div class="card">
-        <h3>ITR Filing</h3>
-        <p>Accurate income tax returns with maximum savings.</p>
-      </div>
-      <div class="card">
-        <h3>GST Services</h3>
-        <p>Registration, returns & compliance for businesses.</p>
-      </div>
-      <div class="card">
-        <h3>Business Advisory</h3>
-        <p>Company registration & tax planning support.</p>
-      </div>
-    </div>
-  </section>
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="service"><h3>ITR Filing</h3><p>Accurate & fast income tax returns.</p></div>
+    <div class="service"><h3>GST Services</h3><p>Registration & monthly GST returns.</p></div>
+    <div class="service"><h3>Business Advisory</h3><p>Company registration & compliance.</p></div>
+  </div>
+</section>
 
-  <!-- CONTACT -->
-  <section id="contact" style="margin-top:40px">
-    <h2>Contact</h2>
-    <p>
-      📞 <a href="tel:+918824626989">+91 8824626989</a><br>
-      💬 <a href="https://wa.me/918824626989" target="_blank">WhatsApp Chat</a><br>
-      ✉️ pinnacletax369@gmail.com
-    </p>
-  </section>
+<section id="contact" class="contact">
+
+  <div class="card">
+    <h3>Send an Enquiry</h3>
+
+    <form name="contact-enquiry"
+          method="POST"
+          data-netlify="true"
+          action="/thank-you.html">
+
+      <input type="hidden" name="form-name" value="contact-enquiry">
+
+      <input name="name" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input name="phone" placeholder="Phone / WhatsApp" required>
+
+      <select name="service" required>
+        <option value="">Select Service</option>
+        <option>ITR Filing</option>
+        <option>GST Services</option>
+        <option>Business Advisory</option>
+      </select>
+
+      <textarea name="message" placeholder="Message"></textarea>
+      <button type="submit">Send Enquiry</button>
+    </form>
+  </div>
+
+  <div class="card">
+    <h3>Office Location</h3>
+    <p>Pinnacle Tax & Advisory<br>
+    Near Mahatma Gandhi School,<br>
+    Ahore Choraha Circle, Jalore – 343004</p>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.6477378753602!2d72.62891737605777!3d25.34959902550977"
+      width="100%" height="250" style="border-radius:12px;border:0" loading="lazy"></iframe>
+  </div>
+
+</section>
 
 </main>
 
 <footer>
   <div class="container">
-    <strong>Pinnacle Tax Advisory</strong><br>
-    Trusted CA · Jalore, Rajasthan<br>
-    © 2025
+    © 2025 Pinnacle Tax Advisory · Call: +91 8824626989
   </div>
 </footer>
 
-<!-- Floating WhatsApp -->
-<a href="https://wa.me/918824626989"
-   target="_blank"
-   style="position:fixed;right:18px;bottom:22px;background:#25D366;color:#fff;padding:14px 18px;border-radius:999px;font-weight:700;">
-   💬 WhatsApp
+<a class="whatsapp" href="https://wa.me/918824626989" target="_blank">
+  WhatsApp
 </a>
+
+<!-- NETLIFY DETECTION -->
+<form name="quick-consult" data-netlify="true" hidden>
+  <input type="hidden" name="form-name" value="quick-consult">
+</form>
+<form name="contact-enquiry" data-netlify="true" hidden>
+  <input type="hidden" name="form-name" value="contact-enquiry">
+</form>
 
 </body>
 </html>
